@@ -1,0 +1,40 @@
+# macOS and editors
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# LaTeX auxiliary files
+*.acn
+*.acr
+*.alg
+*.aux
+*.bcf
+*.blg
+*.bbl
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Local build directories
+build/
+chapter/build/
