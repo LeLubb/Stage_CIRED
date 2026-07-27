@@ -1,0 +1,44 @@
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage[T1]{fontenc}   
+\usepackage[utf8]{inputenc} 
+\usepackage[english]{babel}
+
+\usepackage{newtxtext,newtxmath}
+
+\usepackage{microtype}
+
+\usepackage{xcolor}
+\definecolor{citationred}{RGB}{150,0,0}
+
+\usepackage[
+  colorlinks=true,
+  citecolor=citationred,
+  linkcolor=black,
+  urlcolor=black
+]{hyperref}
+
+\usepackage[authoryear,round]{natbib}
+
+
+
+\usepackage[most]{tcolorbox}  
+\tcbuselibrary{skins}         
+
+
+\newtcolorbox{commentbox}{
+  colframe=green,        
+  boxrule=0.4pt,         
+  sharp corners,         
+  enhanced,              
+  left=2mm,right=2mm,    
+  bottom=2mm,
+  top=1.9em,             
+  overlay={
+    \node[anchor=north west,fill=citationred,text=white,
+          font=\bfseries,inner ysep=2pt,inner xsep=4pt]
+         at (frame.north west) {Commentaires};
+  },
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
